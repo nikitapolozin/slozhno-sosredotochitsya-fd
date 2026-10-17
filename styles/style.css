@@ -79,7 +79,8 @@
   font-family: inherit;
   line-height: 1;
   color: var(--nav-color);
-  padding: 1.5px 13px;
+  padding: 4px 13px;
+  outline-offset: -1px;
   text-transform: lowercase;
   cursor: pointer;
 }
@@ -95,7 +96,7 @@
 .header__theme-menu-button:focus-visible {
   outline: none;
   border-block-end: 1px solid currentColor;
-  padding-block-end: 0.5px;
+  padding-block-end: 3px;
 }
 
 .header__theme-menu-button_active {
@@ -261,7 +262,7 @@
   }
 
   .content__section {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
   }
 
   .content__section-title {
@@ -321,6 +322,10 @@
 }
 
 @media (min-width: 1024px) {
+  .content__section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .causes .text__blocks-list {
     grid-column: 1 / -1;
     display: grid;
