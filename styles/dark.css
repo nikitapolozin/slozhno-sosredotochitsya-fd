@@ -12,8 +12,4 @@
   .header__rec {
     display: block;
   }
-
-  .header__rec::after {
-    display: block;
-  }
 }

@@ -14,10 +14,6 @@ html.theme-light {
   .header__rec {
     display: none;
   }
-
-  .header__rec::after {
-    display: none;
-  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -34,10 +30,6 @@ html.theme-light {
   }
 
   .header__rec {
-    display: none;
-  }
-
-  .header__rec::after {
     display: none;
   }
 }
